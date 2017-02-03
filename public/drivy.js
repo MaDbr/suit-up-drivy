@@ -4,18 +4,19 @@
 //list of cars
 //useful for ALL exercises
 var cars = [{
-  'id': 'p306',
-  'vehicule': 'peugeot 306',
-  'pricePerDay': 20,
-  'pricePerKm': 0.10
+  id: 'lambo',
+  vehicule: 'lamborghini-murcielago',
+  img : 'C:\Users\XPS\Documents\Visual Studio 2015\Projects\suit-up-drivy\public\images\lambo.jpg',
+  pricePerDay: 20,
+  pricePerKm: 0.10
 }, {
-  'id': 'rr-sport',
-  'pricePerDay': 60,
-  'pricePerKm': 0.30
+  id: 'rr-sport',
+  pricePerDay: 60,
+  pricePerKm: 0.30
 }, {
-  'id': 'p-boxster',
-  'pricePerDay': 100,
-  'pricePerKm': 0.45
+  id: 'p-boxster',
+  pricePerDay: 100,
+  pricePerKm: 0.45
 }];
 
 var DRIVY = DRIVY || {};
