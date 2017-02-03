@@ -5,7 +5,7 @@
 //useful for ALL exercises
 var cars = [{
   id: 'lambo',
-  vehicule: 'lamborghini-murcielago',
+  name: 'lamborghini-murcielago',
   img : 'C:\Users\XPS\Documents\Visual Studio 2015\Projects\suit-up-drivy\public\images\lambo.jpg',
   pricePerDay: 20,
   pricePerKm: 0.10
