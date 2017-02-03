@@ -1,6 +1,23 @@
 /*eslint-disable space-unary-ops*/
 'use strict';
 
+//list of cars
+//useful for ALL exercises
+var cars = [{
+  'id': 'p306',
+  'vehicule': 'peugeot 306',
+  'pricePerDay': 20,
+  'pricePerKm': 0.10
+}, {
+  'id': 'rr-sport',
+  'pricePerDay': 60,
+  'pricePerKm': 0.30
+}, {
+  'id': 'p-boxster',
+  'pricePerDay': 100,
+  'pricePerKm': 0.45
+}];
+
 var DRIVY = DRIVY || {};
 
 DRIVY = (function namespace () {
