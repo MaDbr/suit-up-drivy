@@ -1,12 +1,12 @@
 /*eslint-disable space-unary-ops*/
 'use strict';
 
+var DRIVY = DRIVY || {};
+
 //list of cars
 //useful for ALL exercises
 var cars = [{
   id: 'lambo',
-  name: 'lamborghini-murcielago',
-  img : 'C:\Users\XPS\Documents\Visual Studio 2015\Projects\suit-up-drivy\public\images\lambo.jpg',
   pricePerDay: 20,
   pricePerKm: 0.10
 }, {
@@ -18,8 +18,6 @@ var cars = [{
   pricePerDay: 100,
   pricePerKm: 0.45
 }];
-
-var DRIVY = DRIVY || {};
 
 DRIVY = (function namespace () {
   var MS_PER_DAY = 1000 * 60 * 60 * 24;

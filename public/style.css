@@ -1,0 +1,61 @@
+body{
+  background-image: url(imageVoiture.jpg);
+  background-repeat: no-repeat;
+}
+h1{
+  text-align: left;
+  color: #000000;
+  font-style: bold;
+}
+
+
+#car input{
+  diplay block;
+  padding: 12px;
+  margin-left: 140px;
+  text-align: center;
+}
+
+
+}
+
+#car{
+    text-align: center;
+    /*padding: 30px;*/
+}
+
+.model{
+  border-color: #800080;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /*background-color: transparent;*/
+}
+
+#car .price-by-day{
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+#rental{
+  text-align: center;
+}
+
+.button{
+  text-align: center;
+  margin-top: 242px;
+}
+
+#compute{
+  width: 25%;
+  background-color: #FFFFFF;   /* Couleur de fond */
+  border-style: solid;   /* Style de la bordure  */
+  border-width: 3px;   /* Epaisseur de la bordure  */
+  border-color: #800080;   /* Couleur de la bordure  */
+  padding: 5px 10px 5px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+  width: 35.5%;   /* Permet d'ajuster la largeur du bouton à 100% */
+  box-sizing: border-box;   /* Important */
+  font-family: PT sans;   /* Police du texte */
+  font-size: 13px;   /* Taille de la police du texte */
+  font-weight: normal;   /* Graisse du texte : normal = normal ; bold = gras */
+  letter-spacing: 2px;   /* Espacement des caractères */
+}
