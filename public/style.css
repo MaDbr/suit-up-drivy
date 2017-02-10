@@ -1,61 +1,173 @@
-body{
-  background-image: url(imageVoiture.jpg);
-  background-repeat: no-repeat;
+body, div, h5, input {
+  padding:10;
+  margin:0;
 }
-h1{
-  text-align: left;
-  color: #000000;
-  font-style: bold;
+
+img {border:0}
+
+:focus {outline:none}
+
+body, input {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  color: #4c4c4c;
 }
 
 
-#car input{
-  diplay block;
-  padding: 12px;
-  margin-left: 140px;
+
+.drivy {
+  margin: 20px auto;
+  width: 900px;
+  height: 470px;
+  -webkit-border-radius: 8px/7px;
+  -moz-border-radius: 8px/7px;
+  border-radius: 8px/7px;
+  background-color: #bedee8;
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+  box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+  border: solid 1px #cbc9c9;
+}
+.title {
+  margin-left:25px;
+  margin-top:10px;
+  width: 320px;
+}
+
+.titleLambo {
+  margin-left:30px;
+  margin-top:10px;
+  width: 100px;
+}
+
+.titlePorsche {
+  margin-left:10px;
+  margin-top:20px;
+  width: 110px;
+}
+
+.titleFerrari {
+  margin-left:10px;
+  margin-top:20px;
+  width: 120px;
+}
+
+.titleMclaren {
+  margin-left:10px;
+  margin-top:10px;
+  width: 120px;
+}
+
+.container {
+	margin-left: 450px;
+}
+
+input[type=radio] {
+  visibility: hidden;
+}
+
+form{
+  margin: 0 30px;
+  margin-left:140px;
+}
+
+label.radio {
+	cursor: pointer;
+  text-indent: 35px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+}
+
+label.radio:before {
+  background: #000000;
+  content:'';
+  position: absolute;
+  top:2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+label.radio:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 0.5em;
+	height: 0.25em;
+	background: transparent;
+	top: 7.5px;
+	left: 4.5px;
+	border: 3px solid #bedee8;
+	border-top: none;
+	border-right: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+input[type=radio]:checked + label:after {
+	opacity: 1;
+}
+
+hr{
+  color: #a9a9a9;
+  opacity: 0.3;
+}
+
+input[type=text],input[type=date]{
+  width: 200px;
+  height: 45px;
+  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
+  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  border: solid 1px #cbc9c9;
+  margin-left: -5px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+input[type=password]{
+  margin-bottom: 25px;
+}
+
+
+
+a.button {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
   text-align: center;
+  padding: 6px 25px 0px 20px;
+  margin: 30px 370px 20px 0px;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  width: 50px; height: 27px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px rgba(58,87,175,.75);
+  -moz-box-shadow: 0 3px rgba(58,87,175,.75);
+  box-shadow: 0 3px rgba(58,87,175,.75);
+  transition: all 0.1s linear 0s;
+  top: 0px;
+  position: relative;
 }
 
+a.button:hover {
+  top: 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 
-}
-
-#car{
-    text-align: center;
-    /*padding: 30px;*/
-}
-
-.model{
-  border-color: #800080;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  /*background-color: transparent;*/
-}
-
-#car .price-by-day{
-  margin-bottom: 30px;
-  margin-top: 100px;
-}
-
-#rental{
-  text-align: center;
-}
-
-.button{
-  text-align: center;
-  margin-top: 242px;
-}
-
-#compute{
-  width: 25%;
-  background-color: #FFFFFF;   /* Couleur de fond */
-  border-style: solid;   /* Style de la bordure  */
-  border-width: 3px;   /* Epaisseur de la bordure  */
-  border-color: #800080;   /* Couleur de la bordure  */
-  padding: 5px 10px 5px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
-  width: 35.5%;   /* Permet d'ajuster la largeur du bouton à 100% */
-  box-sizing: border-box;   /* Important */
-  font-family: PT sans;   /* Police du texte */
-  font-size: 13px;   /* Taille de la police du texte */
-  font-weight: normal;   /* Graisse du texte : normal = normal ; bold = gras */
-  letter-spacing: 2px;   /* Espacement des caractères */
 }

@@ -1,37 +1,64 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS/HTML Workshop with Drivy</title>
-    <link rel="stylesheet" href="style.css">
+      <title>CSS/HTML Workshop with Drivy</title>
+      <link href='style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h1> Louez une voiture et partez en voyage !</h1>
-    <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-    </div>
-    <div id="rental">
-      <input class="begin" type="date" placeholder="Rental begin date"/>
-      <input class="end" type="date" placeholder="Rental end date"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <div class="button">
-      <button id="compute">Compute</button>
-    </div>
-    <div id="actors"></div>
-    <script id="template" type="x-tmpl-mustache">
-      {{#actors}}
-        <div class="actor">
-          <span>{{who}}</span>
-          <span>{{type}}</span>
-          <span>{{amount}}</span>
-        </div>
-      {{/actors}}
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
-    <script src="drivy.js"></script>
-    <script src="index.js"></script>
+      <div class="drivy">
+        <img class="title" src="imageVoiture.jpg"/>
+		<img class="titleLambo" src="lambo.jpg"/>
+		<img class="titlePorsche" src="porsche.jpg"/>
+		<img class="titleFerrari" src="ferrari.jpg"/>
+		<img class="titleMclaren" src="mclaren.jpg"/>
+        <form>
+              <hr>
+              <div id="car">
+                  <input type="text"  class="model" placeholder="Car model" required/>
+                  <input type="text" class="price-by-day" placeholder="Price By Day" required/>
+                  <input type="text" class="price-by-km" placeholder="Price By Km" required/>
+              </div>
+              <hr>
+             <div id="rental">
+                <input type="date"  class="begin" required/>
+                <input type="date" class="end" required/>
+                <input type="text" class="distance"  placeholder="Distance traveled in km" required/>
+                <hr>
+             </div>
+              <h5>Deductible option?</h5>  <br>
+              <input type="radio" id="yes" name="choice" class="option" checked/>
+              <label for="yes" class="radio" chec>Yes</label>
+              <input type="radio" id="no" name="choice" />
+              <label for="no" class="radio">No</label>
+             <hr>
+             <a href="#" class="button" id="compute">Go !</a>
+        </form>
+      </div>
+      <div id="actors"></div>
+      <script id="template" type="x-tmpl-mustache">
+          
+		  <table class="container">
+            <thead>
+              <tr>
+                <th><h1>Who</h1></th>
+                <th><h1>Type</h1></th>
+                <th><h1>Amount</h1></th>
+              </tr>
+            </thead>
+            <tbody>
+          {{#actors}}
+            <tr>
+              <td>{{who}}</td>
+              <td>{{type}}</td>
+              <td>{{amount}}</td>
+            </tr>
+          {{/actors}}
+          </tbody>
+        </table>
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+      <script src="drivy.js"></script>
+      <script src="index.js"></script>
   </body>
 </html>
