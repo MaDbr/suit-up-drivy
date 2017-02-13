@@ -1,6 +1,6 @@
 body, div, h5, input {
   padding:10;
-  margin:0;
+  margin:10;
 }
 
 img {border:0}
@@ -19,12 +19,7 @@ body, input {
   margin: 20px auto;
   width: 900px;
   height: 470px;
-  -webkit-border-radius: 8px/7px;
-  -moz-border-radius: 8px/7px;
-  border-radius: 8px/7px;
   background-color: #bedee8;
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
   box-shadow: 1px 2px 5px rgba(0,0,0,.31);
   border: solid 1px #cbc9c9;
 }
@@ -59,8 +54,9 @@ body, input {
 }
 
 .container {
-	margin-left: 450px;
+  margin-left: 450px;
 }
+
 
 input[type=radio] {
   visibility: hidden;
@@ -68,11 +64,12 @@ input[type=radio] {
 
 form{
   margin: 0 30px;
-  margin-left:140px;
+  margin-left:100px;
+  margin-top:50px;
 }
 
 label.radio {
-	cursor: pointer;
+  cursor: pointer;
   text-indent: 35px;
   overflow: visible;
   display: inline-block;
@@ -87,7 +84,6 @@ label.radio:before {
   left: 0;
   width: 20px;
   height: 20px;
-  border-radius: 100%;
 }
 
 label.radio:after {
@@ -102,10 +98,6 @@ label.radio:after {
 	border: 3px solid #bedee8;
 	border-top: none;
 	border-right: none;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -113,26 +105,17 @@ input[type=radio]:checked + label:after {
 	opacity: 1;
 }
 
-hr{
-  color: #a9a9a9;
-  opacity: 0.3;
-}
 
 input[type=text],input[type=date]{
-  width: 200px;
-  height: 45px;
-  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
-  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
-  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
-  background-color: #fff;
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
-  box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  width: 220px;
+  height: 40px;
+  background-color: #ffffff;
   border: solid 1px #cbc9c9;
-  margin-left: -5px;
+  margin:30px;
+  margin-left: -10px;
   margin-top: 20px;
   margin-bottom: 15px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 input[type=password]{
@@ -152,22 +135,8 @@ a.button {
   float: right;
   text-decoration: none;
   width: 50px; height: 27px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 10px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 3px rgba(58,87,175,.75);
-  -moz-box-shadow: 0 3px rgba(58,87,175,.75);
-  box-shadow: 0 3px rgba(58,87,175,.75);
-  transition: all 0.1s linear 0s;
   top: 0px;
   position: relative;
 }
 
-a.button:hover {
-  top: 3px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-
-}
